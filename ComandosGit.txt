@@ -1,22 +1,36 @@
 Nuevo proyecto git init
 
-Estatus git status
+Estatus 
+        git status
 
-Agregar  git add
+Agregar  
+        git add
 
-Crear commit git commit
+Crear commit 
+        git commit -m "Mensaje"
 
-Desacer un cambio git checkout --(Nombre de archivo)
+Desacer un cambio 
+        git checkout --(Nombre de archivo)
 
-Ver cambios git diff (Nombre de archivo)
+Ver cambios 
+        git diff (Nombre de archivo)
 
-Ver commits git log
+Ver commits 
+        git log
 
-Ignorar archivos Creando una carpeta .gitignore y escribir los nombres que se quieren Ignorar
+Ignorar archivos 
+        Creando una carpeta 
+        .gitignore y escribir los nombres que 
+        se quieren Ignorar
 
-Crear ramas git branch (Nombre)
-Ver ramas git branch
-Cambuar de rama git checkout (Nombre de rama)
+Crear ramas 
+        git branch (Nombre)
+
+Ver ramas 
+        git branch
+
+Cambiar de rama 
+        git checkout (Nombre de rama)
 
 Subir repositorios a Github
 git remote add origin https://github.com/DavidVilchis63/PythonCurso.git
