@@ -1,4 +1,8 @@
-Nuevo proyecto git init
+Nuevo proyecto 
+        git init
+        git init --bare (servidor remoto)
+        git remote add servidor local "direccion"
+        git remote -v 
 
 Estatus 
         git status
@@ -17,11 +21,13 @@ Ver cambios
 
 Ver commits 
         git log
+        git log --oneline (resumido)
+        git log -p (info extra) -> :q (para salir)
 
 Ignorar archivos 
-        Creando una carpeta 
+        Creando un archivo 
         .gitignore y escribir los nombres que 
-        se quieren Ignorar
+        se quieren Ignorar (/ al final para carpetas)
 
 Crear ramas 
         git branch (Nombre)
@@ -33,5 +39,10 @@ Cambiar de rama
         git checkout (Nombre de rama)
 
 Subir repositorios a Github
-git remote add origin https://github.com/DavidVilchis63/PythonCurso.git
-git push -u origin main
+        git remote add origin https://github.com/DavidVilchis63/PythonCurso.git
+        git push -u origin main
+
+Entrar en carpetas
+        cd
+        cd .. (salir una)
+        mkdir Carpeta (crea carpeta)
