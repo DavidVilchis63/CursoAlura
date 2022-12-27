@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<h3>Tabla de Multiplicar</h3>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+
+    var multiplicador = 1;
+    var numero = 3;
+
+    while (multiplicador <= 10) {
+
+        x = numero * multiplicador;
+        imprimir("> " + numero + " x " + multiplicador + " = " + x);
+        multiplicador++;
+    
+    }
+
+    
+
+    for (var multiplicador = 1;multiplicador <= 10;multiplicador++) {
+
+        x = numero * multiplicador;
+        imprimir("> " + numero + " x " + multiplicador + " = " + x);
+    }
+
+    
+    
+
+
+</script>

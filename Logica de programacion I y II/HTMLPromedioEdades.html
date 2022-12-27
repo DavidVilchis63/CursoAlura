@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<h3>Calcular media de edades</h3>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+
+    var integrantes = parseInt(prompt("Ingrese la cantidad de mienbros"));
+    var n = 1;
+    var totalEdad = 0;
+
+
+    while (n <= integrantes) {
+        
+        edad = parseInt(prompt("Ingrese la edad " + n));
+        totalEdad = totalEdad + edad;
+        n++; 
+
+    }
+
+    mediaEdad = totalEdad / integrantes;
+    imprimir("El promedio de las edades es: " + mediaEdad);
+    
+
+
+</script>

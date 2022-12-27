@@ -1,0 +1,69 @@
+<meta charset="UTF-8">
+<h1>ADIVINANZA</h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    
+
+    var numeroSistema = Math.round(Math.random()*10);
+    var intentos = 10;
+    var contador = 1;
+   
+
+    while (contador <= intentos) {
+
+        var numeroSolicitado = parseInt(prompt("Ingrese un numero entre 0 y 10"));
+    
+        if (numeroSistema == numeroSolicitado) {
+
+            alert("Numero acertado, en el intento: " + intentos + "el numero era: " + numeroSistema);
+            break;
+
+
+        } 
+
+        else {
+
+            alert("Numero errado");
+        } 
+
+        contador++;
+    
+
+        /*
+        if (numeroSistema > numeroSolicitado) {
+
+        imprimir("El numero es mayor al ingresado");
+
+        }
+
+        else {
+
+            imprimir("El numero es menor al ingresado");
+        
+        }
+        */
+    }
+
+    if (numeroSistema == numeroSolicitado) {
+
+            imprimir("Numero acertado, en el intento: " + intentos + "el numero era: " + numeroSistema);
+        
+
+
+        } 
+
+        else {
+
+            imprimir("Numero errado, el numero era: " + numeroSistema);
+        } 
+
+</script>

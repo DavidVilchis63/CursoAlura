@@ -1,0 +1,85 @@
+<meta charset="UTF-8">
+<h1>CALCULAR IMC</h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function calcularIMC(peso,altura) {
+
+        imc = peso / (altura * altura);
+        return(imc)
+
+    }
+
+    nombre = prompt("Ingrese su nombre");
+    pesoUsuario = prompt(nombre + ", ingrese su peso");
+    alturaUsuario = prompt(nombre + ", ingrese su altura");
+    imcCalculado = calcularIMC(pesoUsuario,alturaUsuario);
+
+    imprimir(nombre + ", su IMC calculado es: " + imcCalculado);
+
+    if (imcCalculado < 18.5) {
+
+        imprimir("Se encuentra abajo de los parametros recomendados");
+
+    }
+
+    if (imcCalculado >= 18.5 && imcCalculado <= 24.9) {
+
+        imprimir("Se encuentra en los parametros recomendados (NORMAL)");
+
+    }
+
+    if (imcCalculado >= 25 && imcCalculado <= 29.9) {
+
+        imprimir("Se encuentra encima de los parametros recomendados (SOBREPESO)");
+
+    }
+
+    if (imcCalculado >= 30) {
+
+        imprimir("Se encuentre por encima de parametros recoemndados (OBESIDAD)");
+
+    }
+
+
+
+
+
+
+    /*
+
+    function calcularIMC(peso,altura){
+
+        imc = peso / (altura * altura);
+        return(imc)
+
+    }
+
+    var imcDavid = calcularIMC(74,1.83);
+    var imcValeria = calcularIMC(75,1.70);
+    imprimir("El promedio de IMC de Valeria y David es: " + (imcValeria + imcDavid)/2);
+    */
+
+    /*
+    function calcularIMC(peso1,altura1,nombre1,peso2,altura2,nombre2){
+
+        IMC1 = peso1 / (altura1 * altura1);
+        IMC2 = peso2 / (altura2 * altura2);
+        imprimir("El IMC de " + nombre1 + " es: " + IMC1);
+        imprimir("El IMC de " + nombre2 + " es: " + IMC2);
+        imprimir("El promedio de IMC calculado de " + nombre1 + " y " + nombre2 + " es: " + (IMC1+IMC2)/2);
+
+    }
+
+    calcularIMC(74,1.83,"David",70,1.73,"Valeria");
+    */
+    
+</script>
