@@ -37,6 +37,9 @@ Ver ramas
 
 Cambiar de rama 
         git checkout (Nombre de rama)
+        git checkout -b (nombre de rama) crea y se mueve
+        git merge (nombre de rama) une las ramas a la master
+        :x enter para salir
 
 Subir repositorios a Github
         git remote add origin https://github.com/DavidVilchis63/PythonCurso.git
