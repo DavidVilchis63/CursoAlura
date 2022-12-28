@@ -67,4 +67,5 @@ Modificaciones
 
         git checkout ID (te mueve a un commit antiguo) Para trabajar en el se tiene que crear una nueva rama, si no se quiere trabajar se regresa a la linea mastery ya.
 
-        
+Crear etiquetas de versiones
+        git tag -a v0.1.0 -m Agregar mensaje        
