@@ -51,4 +51,7 @@ Entrar en carpetas
         mkdir Carpeta (crea carpeta)
 
 Guarda cambios temporales pero no en un commit
-        git stash 
+        git stash
+        git stash lista (lista de guardados)
+        git stash apply 0 (trae lo guardado al codigo actual)
+        git stash pop (trae lo guardado al codigo)
