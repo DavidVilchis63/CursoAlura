@@ -23,6 +23,7 @@ Ver commits
         git log
         git log --oneline (resumido)
         git log -p (info extra) -> :q (para salir)
+        git log --graph
 
 Ignorar archivos 
         Creando un archivo 
@@ -40,9 +41,10 @@ Cambiar de rama
         git checkout -b (nombre de rama) crea y se mueve
         git merge (nombre de rama) une las ramas a la master
         :x enter para salir
+        git rebase (nombre de rama) une las ramas a la master
 
 Subir repositorios a Github
-        git remote add origin https://github.com/DavidVilchis63/PythonCurso.git
+        git remote add origin https://github.com/DavidVilchis63/.git
         git push -u origin main
 
 Entrar en carpetas
@@ -55,3 +57,8 @@ Guarda cambios temporales pero no en un commit
         git stash lista (lista de guardados)
         git stash apply 0 (trae lo guardado al codigo actual)
         git stash pop (trae lo guardado al codigo)
+        
+Modificaciones
+        git restore NombreDeArchivo (regresa todos los cambios al commit anterior)
+        git restore --staged (regresa una git add)
+        git revert NumeroDeID (deshace un commit con otro commit)
