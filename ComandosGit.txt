@@ -18,12 +18,14 @@ Desacer un cambio
 
 Ver cambios 
         git diff (Nombre de archivo)
+        git diff id..id (para ver todos los cambios de un commit a otro)
 
 Ver commits 
         git log
         git log --oneline (resumido)
         git log -p (info extra) -> :q (para salir)
         git log --graph
+        git log -n 2 (muestra ultimos dos commit)
 
 Ignorar archivos 
         Creando un archivo 
@@ -45,7 +47,7 @@ Cambiar de rama
 
 Subir repositorios a Github
         git remote add origin https://github.com/DavidVilchis63/.git
-        git push -u origin main
+        git push -u origin master
 
 Entrar en carpetas
         cd
@@ -57,8 +59,12 @@ Guarda cambios temporales pero no en un commit
         git stash lista (lista de guardados)
         git stash apply 0 (trae lo guardado al codigo actual)
         git stash pop (trae lo guardado al codigo)
-        
+
 Modificaciones
         git restore NombreDeArchivo (regresa todos los cambios al commit anterior)
         git restore --staged (regresa una git add)
         git revert NumeroDeID (deshace un commit con otro commit)
+
+        git checkout ID (te mueve a un commit antiguo) Para trabajar en el se tiene que crear una nueva rama, si no se quiere trabajar se regresa a la linea mastery ya.
+
+        
