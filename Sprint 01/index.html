@@ -58,23 +58,39 @@
 
 <script>
     function ocultar() {
-        const imagen = document.querySelector(".imarec");
-        const texto = document.querySelector(".textoEncrip");
+        var imagen = document.querySelector(".imarec");
+        var texto = document.querySelector(".textoEncrip");
         imagen.style.display = "none";
         texto.style.display = "none";
     }
 
 
     function aparecer(){
-        const ejemplo = document.querySelector(".textoEncriptado1");
+        var ejemplo = document.querySelector(".textoEncriptado1");
         ejemplo.style.display = "block";
 
     }
 
-const botonOcultar = document.querySelector(".btEncriptar");
-botonOcultar.addEventListener("click",ocultar)
+    var botonOcultar = document.querySelector(".btEncriptar");
+    botonOcultar.addEventListener("click",ocultar)
 
-const botonAparecer = document.querySelector(".btEncriptar");
-botonAparecer.addEventListener("click",aparecer)
+    var botonAparecer = document.querySelector(".btEncriptar");
+    botonAparecer.addEventListener("click",aparecer)
 
+    var encriptar = document.querySelector(".btEncriptar")
+    var textoEncri1 = document.querySelector("textarea[name='textoEncri']")
+    var textoIngresado = "";
+
+    function guardarTexto(){        
+        textoIngresado = textoEncri1.value;
+        console.log("texto: ", textoIngresado)
+    }
+
+    var botonGuardar = document.querySelector(".btEncriptar");
+    botonGuardar.addEventListener("click",guardarTexto)
+
+    function encriptarTexto(){
+        
+        
+    }
 </script>
