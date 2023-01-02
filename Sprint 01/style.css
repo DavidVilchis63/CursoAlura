@@ -106,9 +106,9 @@ header {
     height: 67px;
     background: #0A3871;
     border-radius: 24px;
-  }
+}
 
-  .btDesencriptar {
+.btDesencriptar {
     position: relative;
     display: inline-block;
     color: #0A3871;
@@ -120,5 +120,15 @@ header {
     height: 67px;
     background: #D8DFE8;
     border-radius: 24px;
-  }
+}
   
+.piePagina{
+    width: 100%;
+    position: absolute;
+    top: 655px;
+}
+
+.piePagina h3{
+    text-align: center;
+    color: #495057;
+}
