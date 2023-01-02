@@ -31,12 +31,42 @@ header {
     left: 80px;
 }
 
+.cuadroTexto textarea{
+    word-wrap: normal;
+    position: absolute;
+    left: 240px;
+    top: 168px;
+    width: 577px;
+    height: 300px;
+    font-size: 22px;
+    color: #0A3871;
+    border-style: none;
+    font-weight: 400;
+    line-height: 150%;
+    overflow: hidden;
+    outline: none;
+}
+
 .cajaBotones{
     position: absolute;
     width: 680px;
     height: 67px;
     left: 200px;
-    top: 573px;
+    top: 570px;
+}
+
+.advertencia p{
+    display: inline-block;
+    color: gray;
+    position: absolute;
+    left: 210px;
+    top: 540px;
+}
+
+.advertenciaImg{
+    position: absolute;
+    left: 190px;
+    top: 540px;
 }
 
 .btEncriptar {
