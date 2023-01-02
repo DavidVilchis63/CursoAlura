@@ -24,6 +24,9 @@
                 <div class="textoEncrip">
                     <h4>Ningún mensaje fue encontrado</h4>
                     <p>Ingrese el texto que desea encriptar o desencriptar</p>                    
+                </div>
+                <div class="textoEncriptado1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non nobis eius delectus autem itaque, enim perspiciatis saepe, inventore tempora dolorum sed doloremque aut impedit ratione voluptas harum vel quam aliquid.</p>
                 </div>                
             </div>
             
@@ -40,8 +43,8 @@
                 <button class="btEncriptar">Encriptar</button>
                 <button class="btDesencriptar">Desencriptar</button>
             </div>
-
         </section>
+
         
     </main>
 
@@ -52,3 +55,26 @@
     </footer>
 
 </body>
+
+<script>
+    function ocultar() {
+        const imagen = document.querySelector(".imarec");
+        const texto = document.querySelector(".textoEncrip");
+        imagen.style.display = "none";
+        texto.style.display = "none";
+    }
+
+
+    function aparecer(){
+        const ejemplo = document.querySelector(".textoEncriptado1");
+        ejemplo.style.display = "block";
+
+    }
+
+const botonOcultar = document.querySelector(".btEncriptar");
+botonOcultar.addEventListener("click",ocultar)
+
+const botonAparecer = document.querySelector(".btEncriptar");
+botonAparecer.addEventListener("click",aparecer)
+
+</script>

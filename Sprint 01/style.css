@@ -39,6 +39,15 @@ header {
     left: 37px;
 }
 
+.rectangulo .textoEncriptado1{
+    display: none;
+    text-align: center;
+    margin-top: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+}
+
 .rectangulo .textoEncrip p{
     font-weight: 400;
     font-size: 16px;
