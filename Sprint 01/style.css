@@ -39,7 +39,7 @@ header {
     left: 37px;
 }
 
-.rectangulo .textoEncriptado1{
+.rectangulo .textoEncriptado1 p{
     display: none;
     text-align: center;
     margin-top: 30%;

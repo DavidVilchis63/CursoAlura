@@ -26,7 +26,7 @@
                     <p>Ingrese el texto que desea encriptar o desencriptar</p>                    
                 </div>
                 <div class="textoEncriptado1">
-                    <p id="parrafoFinal"></p>
+                    <p id="parrafoFinal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi obcaecati debitis vel nihil magnam, sunt at expedita nisi facilis, voluptatem quia similique accusantium. Quos qui, cum nobis dicta doloremque esse!</p>
                 </div>                
             </div>
             
@@ -62,20 +62,10 @@
         var texto = document.querySelector(".textoEncrip");
         imagen.style.display = "none";
         texto.style.display = "none";
-    }
-
-
-    function aparecer(){
-        var ejemplo = document.querySelector(".textoEncriptado1");
-        ejemplo.style.display = "block";
-
-    }
+    }    
 
     var botonOcultar = document.querySelector(".btEncriptar");
     botonOcultar.addEventListener("click",ocultar)
-
-    var botonAparecer = document.querySelector(".btEncriptar");
-    botonAparecer.addEventListener("click",aparecer)
 
     var encriptar = document.querySelector(".btEncriptar")
     var textoEncri1 = document.querySelector("textarea[name='textoEncri']")
@@ -96,13 +86,14 @@
         "o":"ober",
         "u":"ufat"
     }
-    var textoFinal = "";
+
+    var textoFinal = "";    
 
     function encriptarTexto(){
-        
-        for (var i=0; i < textoIngresado.length; i++){
+                
+        for (let i = 0; i < textoIngresado.length; i++){
 
-            var caracter = textoIngresado.charAt(i);
+            var caracter = textoIngresado[i];
 
             if (tabla.hasOwnProperty(caracter)){
                 textoFinal += tabla[caracter];
@@ -110,19 +101,26 @@
             else {
                 textoFinal += caracter;
             }
-        }        
+        } 
         
-        console.log(textoFinal)
-        return textoFinal;        
+        var parrafo = document.getElementById("parrafoFinal");    
+        parrafo.innerHTML = textoFinal; 
+             
     }
 
     var botonEncriptar = document.querySelector(".btEncriptar");
     botonEncriptar.addEventListener("click",encriptarTexto);
 
-    var parrafo = document.getElementById("parrafoFinal");
-    var impresion = textoFinal.toString();
-    parrafo.innerHTML = (textoFinal);
+    function aparecer(){
+        var ejemplo =document.getElementById("parrafoFinal");
+        ejemplo.style.display = "block";
+        
+    }
 
+    
+    
+    var botonAparecer = document.querySelector(".btEncriptar");
+    botonAparecer.addEventListener("click",aparecer)
     
 
     var tabla1 = {
