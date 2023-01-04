@@ -123,14 +123,6 @@
 
     // Desincriptador
 
-    var tabla1 = {
-        "ai":"a",
-        "enter":"e",
-        "imes":"i",
-        "ober":"o",
-        "ufat":"u"
-    }    
-
     var botonOcultar1 = document.querySelector(".btDesencriptar");
     botonOcultar1.addEventListener("click",ocultar)
 
@@ -141,23 +133,17 @@
     botonGuardar1.addEventListener("click",guardarTexto)
 
     function DesencriptarTexto(){
+
+        var texto = textoIngresado;
                 
-        for (let i = 0; i < textoIngresado.length; i++){
-        
-            var caracter = textoIngresado[i];
-        
-            if (tabla1.hasOwnProperty(caracter)){
-                textoFinal += tabla1[caracter];
-            }
-            else {
-                textoFinal += caracter;
-            }
-        }
-        
-        console.log(textoFinal);
-                
-        //var parrafo = document.getElementById("parrafoFinal");    
-        //parrafo.innerHTML = textoFinal; 
+        var textCifrado = texto.replace(/enter/igm,"e")
+        var textCifrado = textCifrado.replace(/ober/igm,"o")
+        var textCifrado = textCifrado.replace(/imes/igm,"i")
+        var textCifrado = textCifrado.replace(/ai/igm,"a")
+        var textCifrado = textCifrado.replace(/ufat/igm,"u")
+                        
+        var parrafo = document.getElementById("parrafoFinal");    
+        parrafo.innerHTML = textCifrado; 
                      
     }
 
