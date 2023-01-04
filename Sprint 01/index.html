@@ -26,7 +26,7 @@
                     <p>Ingrese el texto que desea encriptar o desencriptar</p>                    
                 </div>
                 <div class="textoEncriptado1">
-                    <p id="parrafoFinal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi obcaecati debitis vel nihil magnam, sunt at expedita nisi facilis, voluptatem quia similique accusantium. Quos qui, cum nobis dicta doloremque esse!</p>
+                    <p id="parrafoFinal"></p>
                 </div>  
                 <div class="botonCopiar">
                     <button class="btCopiar">Copiar</button>
@@ -154,5 +154,17 @@
     var botonDesencriptar = document.querySelector(".btDesencriptar");
     botonDesencriptar.addEventListener("click",DesencriptarTexto);
 
+    //Funcion para copiar texto
+
+    function copiarPortapapeles() {
+
+        var copiado = document.querySelector("#parrafoFinal").textContent
+        navigator.clipboard
+        .writeText(copiado)        
+        alert("Texto copiado")
+    }
+
+    var botonCopiar = document.querySelector(".btCopiar");
+    botonCopiar.addEventListener("click",copiarPortapapeles);
 
 </script>
