@@ -57,6 +57,7 @@
 </body>
 
 <script>
+
     function ocultar() {
         var imagen = document.querySelector(".imarec");
         var texto = document.querySelector(".textoEncrip");
@@ -115,13 +116,12 @@
         var ejemplo =document.getElementById("parrafoFinal");
         ejemplo.style.display = "block";
         
-    }
-
-    
+    }    
     
     var botonAparecer = document.querySelector(".btEncriptar");
-    botonAparecer.addEventListener("click",aparecer)
-    
+    botonAparecer.addEventListener("click",aparecer)    
+
+    // Desincriptador
 
     var tabla1 = {
         "ai":"a",
@@ -129,5 +129,40 @@
         "imes":"i",
         "ober":"o",
         "ufat":"u"
+    }    
+
+    var botonOcultar1 = document.querySelector(".btDesencriptar");
+    botonOcultar1.addEventListener("click",ocultar)
+
+    var botonAparecer1 = document.querySelector(".btDesencriptar");
+    botonAparecer1.addEventListener("click",aparecer)
+
+    var botonGuardar1 = document.querySelector(".btDesencriptar");
+    botonGuardar1.addEventListener("click",guardarTexto)
+
+    function DesencriptarTexto(){
+                
+        for (let i = 0; i < textoIngresado.length; i++){
+        
+            var caracter = textoIngresado[i];
+        
+            if (tabla1.hasOwnProperty(caracter)){
+                textoFinal += tabla1[caracter];
+            }
+            else {
+                textoFinal += caracter;
+            }
+        }
+        
+        console.log(textoFinal);
+                
+        //var parrafo = document.getElementById("parrafoFinal");    
+        //parrafo.innerHTML = textoFinal; 
+                     
     }
+
+    var botonDesencriptar = document.querySelector(".btDesencriptar");
+    botonDesencriptar.addEventListener("click",DesencriptarTexto);
+
+
 </script>
